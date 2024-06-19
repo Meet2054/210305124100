@@ -15,7 +15,7 @@ app.use(async (req, res, next) => {
   }
 
   try {
-    const response = await axios.get(`http://localhost:3000/numbers/${numberId}`);
+    const response = await axios.get(`http://20.244.56.144/test/${numberId}`);
     const responseTime = Date.now() - startTime;
 
     if (responseTime > 500) {
